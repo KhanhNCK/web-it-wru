@@ -3,14 +3,23 @@ include('header.php');
 ?>
 <?php
 require 'connect.php';
+    if(isset($_GET['p']))
+    {
+        $p=$_GET['p'];
+    }else
+    {
+        $p=1;
+    }
 
+    $sotin=4;
+    $from=($p - 1) * $sotin;
     if($_GET['iddanhmuc'])
     {
         $iddanhmuc=$_GET['iddanhmuc'];
         // echo $iddanhmuc;
         
 
-        $sql="SELECT * FROM `tin` WHERE iddanhmuc='$iddanhmuc'";
+        $sql="SELECT * FROM `tin` WHERE iddanhmuc='$iddanhmuc' LIMIT $from,$sotin";
         $data=mysqli_query($con,$sql);
 
         
@@ -20,6 +29,7 @@ require 'connect.php';
        
 
     }
+
 ?>
 <main>
     <div class="container">
@@ -33,7 +43,7 @@ require 'connect.php';
                    while($row=mysqli_fetch_array($data)){
                     echo '
                     <div class="row tint">
-                        <div class="col-md-4"><a href="#"><img src="'.$row['hinhanhtin'].'" alt=""></a></div>
+                        <div class="col-md-4"><a href="#"><img style="height:150px;" src="'.$row['hinhanhtin'].'" alt=""></a></div>
                         <div class="col-md-8"><br>
                             <a href="trangchitiet.php?iddanhmuc='.$iddanhmuc.'&idtin='.$row['idtin'].'">
                                 <h4>'.$row['tieudetin'].'</h4>
@@ -54,10 +64,22 @@ require 'connect.php';
                 <br> <br>
                 <div class="phantrang" >
                     <ul class="pagination" >
-                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        <?php
+                             $sql2="SELECT * FROM `tin` WHERE iddanhmuc='$iddanhmuc'";
+                             $data2=mysqli_query($con,$sql2);  
+                              $sumtin=mysqli_num_rows($data2);
+                         
+                             $sotrang=ceil($sumtin/$sotin);echo '<br>';
+                            //  echo $sumtin;echo '<br>';
+                            //  echo $sotrang;
+                             for( $t=1;$t<=$sotrang;$t++)
+                             {
+                                 
+                                 echo '<li class="page-item"><a class="page-link" href="tintrongloai?iddanhmuc='.$iddanhmuc.'&p='.$t.'">'.$t.'</a></li>';
+                             }
+                     
+                        ?>
+                    
                     </ul>
                 </div>
 
