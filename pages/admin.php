@@ -85,7 +85,7 @@ if ($_POST['username']) {
                         echo '<li class="nav-item">
                                 <a class="nav-link" data-toggle="collapse"  aria-expanded="false" >
                                   <i class="menu-icon typcn typcn-document-add"></i>
-                                  <span class="menu-title">Sinh viên điểm danh</span>
+                                  <span class="menu-title"> <a class="nav-link" href="sinhviendiemdanh.php?iduser='.$row['iduser'].'&level='.$row['level'].'&hinhanhuser='.$row['hinhanhuser'].'&username='.$username.'"> Sinh viên điểm danh </a></span>
                                   <i class="menu-arrow"></i>
                                 </a>
                               </li>';
