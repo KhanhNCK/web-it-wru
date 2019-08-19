@@ -119,8 +119,34 @@
         <div class="search">
           <form>
             <input id="searchbox" type="text" name="search" placeholder="Search..">
+          
           </form>
         </div>
+        
+        <!-- <?php
+        if (isset( $_GET["search"]) != '') {
+            $search = $_GET['search'];
+          $query = "SELECT * FROM tin WHERE (tieudetin like '%$search%')";
+     
+            $sql = mysqli_query($con, $query);
+ 			//echo $sql;
+            $num = mysqli_num_rows($sql);
+            if ($num > 0) {
+                echo $num." ket qua tra ve voi tu khoa <b>".$search."</b>";
+                echo '<table border="1" cellspacing="0" cellpadding="10">';
+                foreach( $sql as $row ) {
+                  echo '<tr>';
+                        echo "<td>{$row['tieudetin']}</td>";
+                    echo '</tr>';
+          
+                }
+            } 
+            else {
+                echo "Khong tim thay ket qua!";
+            }
+        }
+        ?> -->
+
         <!-- cart -->
       </div>
     </div>

@@ -80,26 +80,26 @@
             </div>
 
             <div class="col-md-4 subject">
-              <a href="tintrongloai.php?iddanhmuc=42"><i class="fas fa-network-wired fa-2x"></i><span>Hệ thống thông tin</span></a>
+              <a href="Bomon_HTTT.php"><i class="fas fa-network-wired fa-2x"></i><span>Hệ thống thông tin</span></a>
 
             </div>
 
             <div class="col-md-4 subject">
-              <a href="tintrongloai.php?iddanhmuc=43"><i class="fas fa-robot fa-2x"></i><span>Khoa học máy tính</span></a>
+              <a href="Bomon_KHMT.php"><i class="fas fa-robot fa-2x"></i><span>Khoa học máy tính</span></a>
 
             </div>
 
             <div class="col-md-4 subject">
-              <a href="tintrongloai.php?iddanhmuc=44"><i class="fas fa-satellite fa-2x"></i><span>Kỹ thuật máy tính và mạng</span></a>
+              <a href="Bomon_MMT.php"><i class="fas fa-satellite fa-2x"></i><span>Kỹ thuật máy tính và mạng</span></a>
             </div>
 
             <div class="col-md-4 subject">
-              <a href="tintrongloai.php?iddanhmuc=45"><i class="fas fa-square-root-alt fa-2x"></i><span>Toán học</span></a>
+              <a href="Bomon_Toanhoc.php"><i class="fas fa-square-root-alt fa-2x"></i><span>Toán học</span></a>
 
             </div>
 
             <div class="col-md-4 subject">
-              <a href="tintrongloai.php?iddanhmuc=46"><i class="fas fa-laptop-code fa-2x"></i><span>Tin học và kỹ thuật tính toán </span></a>
+              <a href="Bomon_tinhoc.php"><i class="fas fa-laptop-code fa-2x"></i><span>Tin học và kỹ thuật tính toán </span></a>
             </div>
           </div>
         </section>
@@ -138,12 +138,14 @@
                 <div class="col-md-6 title-tt">
                   <?php
                     $rowtintuc1 = mysqli_fetch_assoc($datatintuc1);
-                    echo '<a href="trangchitiet.php?iddanhmuc='.$rowtintuc1['iddanhmuc'].'&idtin='.$rowtintuc1['idtin'].'"><img style="height:220px;" src="'.$rowtintuc1['hinhanhtin'].'" alt=""></a>
-                          <a href="trangchitiet.php?iddanhmuc='.$rowtintuc1['iddanhmuc'].'&idtin='.$rowtintuc1['idtin'].'>
-                            <h4>'.$rowtintuc1['tieudetin'].'</h4>
-                              </a> <span><i class="fas fa-calendar-minus"></i> 27/07/2019</span> <br>';
-                              echo $rowtintuc1['tieudetin'];
+                    echo '<a href="trangchitiet.php?iddanhmuc='.$rowtintuc1['iddanhmuc'].'&idtin='.$rowtintuc1['idtin'].'"><img src="'.$rowtintuc1['hinhanhtin'].'" alt=""></a>
+                    <a href="trangchitiet.php?iddanhmuc='.$rowtintuc1['iddanhmuc'].'&idtin='.$rowtintuc1['idtin'].'">
+                    <h4>'.$rowtintuc1['tieudetin'].'</h4>
+                                </a>
+                                <span><i class="fas fa-calendar-minus"></i> 27/07/2019</span>';
+                              // echo $rowtintuc1['tieudetin'];
                   ?>
+                  
                   
                   
                 </div>
@@ -232,7 +234,7 @@
             <?php
               while($rowtailieumonhoc=mysqli_fetch_array($datatailieumonhoc))
               {
-                echo '    <a href="#?idmonhoc='.$rowtailieumonhoc['idmonhoc'].'" download="Tài liệu môn">
+                echo '    <a href="uploads/chuyên-đề.docx" download="">
                         <p>Tài liệu môn '.$rowtailieumonhoc['tenmonhoc'].'  <br><br> &nbsp &nbsp  Giảng viên giảng dạy :  '.$rowtailieumonhoc['username'].'</p>
                 
                        </a>

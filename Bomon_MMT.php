@@ -4,8 +4,8 @@ include('header.php');
 <main>
     <div class="container">
         <div class="row">
-            <div class="col-md-9 tochuc"><br><br>
-                <h3>Giới thiệu bộ môn Mạng máy tính</h3><br>
+            <div class="col-md-9 tochuc">
+                <h3>Giới thiệu bộ môn Mạng máy tính</h3>
                 <p></p>
                 <p>Bộ môn Kỹ thuật MT và mạng đảm nhiệm chức năng giảng dạy Tin đại cương, các môn cơ sở, chuyên ngành Kỹ thuật máy tính và mạng.</p>
                 <p><span>Giới thiệu Bộ môn Kỹ thuật máy tính và mạng</span></p>

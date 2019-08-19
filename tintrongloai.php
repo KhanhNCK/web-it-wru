@@ -35,8 +35,7 @@ require 'connect.php';
     <div class="container">
         <div class="row">
             <div class="col-md-9 tintuc">
-                <br><br>
-                <h3 style="font-weight:bold;"><?php echo $row1['tendanhmuc']?></h3><br>
+                <h3 style="font-weight:bold;"><?php echo $row1['tendanhmuc']?></h3>
                 <div class=" tin">
                     
                    <?php
@@ -44,14 +43,14 @@ require 'connect.php';
                     echo '
                     <div class="row tint">
                         <div class="col-md-4"><a href="#"><img style="height:150px;" src="'.$row['hinhanhtin'].'" alt=""></a></div>
-                        <div class="col-md-8"><br>
+                        <div class="col-md-8">
                             <a href="trangchitiet.php?iddanhmuc='.$iddanhmuc.'&idtin='.$row['idtin'].'">
                                 <h4>'.$row['tieudetin'].'</h4>
                             </a>
                             <p>'.$row['tomtattin'].'</p>
                             <span><i class="fas fa-calendar-minus"></i> 27/07/2019</span>
                             <p style="text-align:right;"><a  href="trangchitiet.php?iddanhmuc='.$iddanhmuc.'&idtin='.$row['idtin'].'">Xem chi tiết tin</a></p>
-                            <br><br> </div>
+                            </div>
                     </div>';
                    }
                     
@@ -62,7 +61,7 @@ require 'connect.php';
                 </div>
 
                 <br> <br>
-                <div class="phantrang" >
+                <div class="phantrang " style="float: right;" >
                     <ul class="pagination" >
                         <?php
                              $sql2="SELECT * FROM `tin` WHERE iddanhmuc='$iddanhmuc'";
@@ -75,7 +74,7 @@ require 'connect.php';
                              for( $t=1;$t<=$sotrang;$t++)
                              {
                                  
-                                 echo '<li class="page-item"><a class="page-link" href="tintrongloai?iddanhmuc='.$iddanhmuc.'&p='.$t.'">'.$t.'</a></li>';
+                                 echo '<li class="page-item "><a class="page-link " href="tintrongloai?iddanhmuc='.$iddanhmuc.'&p='.$t.'">'.$t.'</a></li>';
                              }
                      
                         ?>

@@ -79,8 +79,9 @@ if ($_GET['username']) {
         echo ' <td style="border:1px solid black"><a style="color:black;" href="suamonhoc.php?iduser='.$iduser.'&trangthaithem='.$row1['trangthai'].'&ngayketthucthem='.$row1['ngayketthuc'].'&ngaybatdauthem='.$row1['ngaybatdau'].'&idmonhocthem='.$row1['idmonhoc'].'&tenmonhocthem='.$row1['tenmonhoc'].'&level='.$level.'&hinhanhuser='.$hinhanhuser.'&username='.$username.'"  rel="noopener noreferrer">Sửa môn</a> 
         <br> <br>   <a style="color:black;" href="xoamonhoc.php?&trangthaithem='.$row1['trangthai'].'&ngayketthucthem='.$row1['ngayketthuc'].'&ngaybatdauthem='.$row1['ngaybatdau'].'&idmonhocthem='.$row1['idmonhoc'].'&tenmonhocthem='.$row1['tenmonhoc'].'&iduser='.$iduser.'&level='.$level.'&hinhanhuser='.$hinhanhuser.'&username='.$username.'"  rel="noopener noreferrer">Xóa môn</a>
         <br> <br> <a style="color:black;" href="xemdanhsachlop.php?tenmonhoc='.$row1['tenmonhoc'].'&iduser='.$iduser.'&idmonhoc='.$row1['idmonhoc'].'&level='.$level.'&hinhanhuser='.$hinhanhuser.'&username='.$username.'"  rel="noopener noreferrer">Xem danh sách lớp</a>
+        <br> <br> <a style="color:black;" href="upload.php?tenmonhoc='.$row1['tenmonhoc'].'&iduser='.$iduser.'&idmonhoc='.$row1['idmonhoc'].'&level='.$level.'&hinhanhuser='.$hinhanhuser.'&username='.$username.'"  rel="noopener noreferrer">Push file</a>
         <br> <br> <a style="color:black;" href="themhocsinh.php?iduser='.$iduser.'&tenmonhoc='.$row1['tenmonhoc'].'&idmonhoc='.$row1['idmonhoc'].'&level='.$level.'&hinhanhuser='.$hinhanhuser.'&username='.$username.'"  rel="noopener noreferrer">ADD học sinh</a></td>';             
-
+            
         echo ' <td style="border:1px solid black"><a style="color:black;" href="#"  rel="noopener noreferrer">'.$row1['idmonhoc'].'</a></td>';  
         echo ' <td style="border:1px solid black"><a style="color:black;" href="#"  rel="noopener noreferrer">'.$row1['tenmonhoc'].'</a></td>';
         echo ' <td style="border:1px solid black"><a style="color:black;" href="#"  rel="noopener noreferrer">'.$row1['ngaybatdau'].'</a></td>';

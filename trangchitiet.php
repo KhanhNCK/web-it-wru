@@ -31,7 +31,7 @@ require 'connect.php';
                 <?php
                     while($row=mysqli_fetch_array($data,MYSQLI_ASSOC))
                     {
-                        echo '<br> <br> <br>
+                        echo '
                         <h3>'.$row['tieudetin'].'</h3> <br>
                         <img src="'.$row['hinhanhtin'].'" alt=""><br><br>
                         <p>'.$row['noidungtin'].'</p><br><br> <br>';
@@ -66,7 +66,7 @@ require 'connect.php';
                         while($row1=mysqli_fetch_array($data1,MYSQLI_ASSOC))
                                 {
                                     echo '<div class="col-md-4 new">
-                                            <a href="#"><img style="height:200px;" class="img-thumbnail"  src="'.$row1['hinhanhtin'].'" alt=""></a>
+                                            <a href="#"><img style="height:150px;" class="img-thumbnail"  src="'.$row1['hinhanhtin'].'" alt=""></a>
                                             <div class="tt"><a href="trangchitiet?idtin='.$row1['idtin'].'&iddanhmuc='.$iddanhmuc.'"><p>'.$row1['tieudetin'].'</p></a></div>
                                         </div>';
                                 }

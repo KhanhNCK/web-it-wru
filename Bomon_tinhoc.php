@@ -4,8 +4,8 @@ include('header.php');
 <main>
     <div class="container">
         <div class="row">
-            <div class="col-md-9 tochuc"><br><br>
-                <h3>Giới thiệu Bộ môn Toán họcGiới thiệu Bộ môn Tin học và Kỹ thuật Tính toán</h3><br>
+            <div class="col-md-9 tochuc">
+                <h3>Giới thiệu Bộ môn Toán họcGiới thiệu Bộ môn Tin học và Kỹ thuật Tính toán</h3>
                 <p></p>
                 <p>Bên cạnh nhiệm vụ giảng dạy các môn Tin học văn phòng và Tin học đại cương cho sinh viên toàn trường, BM Tin học và Kỹ thuật tính toán còn đảm nhiệm một số môn cơ sở Toán học trong CNTT, các kỹ thuật tính toán, xử lý dữ liệu như: Tư duy tính toán, Thuật toán ứng dụng, Toán rời rạc, Học máy, Tin sinh,...</p>
                 <p></p>

@@ -5,8 +5,8 @@ include('header.php');
     <div class="container">
         <div class="row">
             <div class="col-md-9 tochuc">
-                <br><br>
-                <h3>Giới thiệu bộ môn Hệ thống thông tin</h3><br>
+           
+                <h3>Giới thiệu bộ môn Hệ thống thông tin</h3>
                 <p></p>
                 <p>Bộ môn Hệ thống thông tin đảm nhiệm chức năng giảng dạy tin đại cương, môn tin cơ sở và chuyên ngành Hệ thống thông tin</p>
                 <p><span>Thành phần lãnh đạo bộ môn:</span></p>

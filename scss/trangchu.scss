@@ -1203,8 +1203,123 @@
   text-align: center;
 }
 
+.share {
+    border-top: 2px solid #f4f5f6;
+    padding-bottom: 25px;
+    padding-top: 25px;
+  
+    border-bottom: 2px solid #f4f5f6;
+    display: flex;
+    div:nth-child(1) {
+      background: #3f83ff;
+      margin-right: 2%;
+      a {
+        padding: 15px;
+        font-size: 12px;
+  
+        text-decoration: none;
+        color: #fff;
+        i {
+          padding-right: 10px;
+        }
+      }
+    }
+    div:nth-child(2) {
+      background: #3bd3ee;
+      margin-right: 2%;
+      a {
+        padding: 15px;
+        font-size: 12px;
+  
+        text-decoration: none;
+        color: #fff;
+        i {
+          padding-right: 10px;
+        }
+      }
+    }
+    div:nth-child(3) {
+      background: rgb(120, 122, 122);
+      margin-right: 2%;
+      a {
+        padding: 15px;
+        font-size: 12px;
+        text-decoration: none;
+        color: #fff;
+        i {
+          padding-right: 10px;
+        }
+      }
+    }
+    div:nth-child(4) {
+      background: #941828;
+      margin-right: 2%;
+      a {
+        padding: 15px;
+        font-size: 12px;
+        text-decoration: none;
+        color: #fff;
+        i {
+          padding-right: 10px;
+        }
+      }
+    }
+    div:hover {
+      transform: translate(0, -0.5em);
+      transition: all 0.5s ease 0s;
+    }
+  }
 
-.main-gioithieu{
-  margin-top: 5%;
+  //trang con
+.main-gioithieu, .main-loichaomung, .tochuc, .nghiencuukhoahoc,.detai{
+  font-size: 16px;
+  margin-top: 3%;
   background-color: #fff;
+  h3{
+    font-weight: bold;
+    padding-top: 30px;
+  }
+  span{
+    font-weight: bold;
+  }
+}
+
+.tintuc{
+  background-color: #fff;
+  margin-top: 3%; 
+  h3{
+    margin-top: 5%; 
+    color: #1e73be;
+    font-weight: bold;
+  }
+  .tin{
+    margin-top: 5%;
+    a{
+      text-decoration: none;
+      h4{
+        font-style: 22px;
+        color: #1e73be;
+      }
+    }
+    p{
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      padding-top: 25px;
+    }
+    .tint{
+      margin-bottom: 10%;
+    }
+  }
+}
+
+.chitiet{
+  background-color: #fff;
+  margin-top: 3%; 
+  h3{
+    margin-top: 5%; 
+    color: #1e73be;
+    font-weight: bold;
+  }
 }

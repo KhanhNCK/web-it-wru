@@ -3,9 +3,9 @@ include('header.php');
 ?>
 <main>
     <div class="container">
-        <div class="row"><br><br>
+        <div class="row">
             <div class="col-md-9 tochuc">
-                <h3>Giới thiệu Bộ môn Toán học</h3><br><br>
+                <h3>Giới thiệu Bộ môn Toán học</h3>
                 <p></p><br>
                 <p>Bộ môn Toán đảm nhiệm chức năng giảng dạy toán học cho sinh viên toàn trường. Việc trang bị kiến thức toán học đối với sinh viên công nghệ thông tin là hết sức quan trọng, tư duy toán học sẽ giúp sinh viên CNTT giải quyết tốt các vấn đề liên quan đến giải thuật, hướng phát triển của ứng dụng CNTT.</p>
                 <p></p>

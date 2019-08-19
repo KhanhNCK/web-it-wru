@@ -875,6 +875,94 @@
 .foot-lnk {
   text-align: center; }
 
-.main-gioithieu {
-  margin-top: 5%;
+.share {
+  border-top: 2px solid #f4f5f6;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  border-bottom: 2px solid #f4f5f6;
+  display: flex; }
+  .share div:nth-child(1) {
+    background: #3f83ff;
+    margin-right: 2%; }
+    .share div:nth-child(1) a {
+      padding: 15px;
+      font-size: 12px;
+      text-decoration: none;
+      color: #fff; }
+      .share div:nth-child(1) a i {
+        padding-right: 10px; }
+  .share div:nth-child(2) {
+    background: #3bd3ee;
+    margin-right: 2%; }
+    .share div:nth-child(2) a {
+      padding: 15px;
+      font-size: 12px;
+      text-decoration: none;
+      color: #fff; }
+      .share div:nth-child(2) a i {
+        padding-right: 10px; }
+  .share div:nth-child(3) {
+    background: #787a7a;
+    margin-right: 2%; }
+    .share div:nth-child(3) a {
+      padding: 15px;
+      font-size: 12px;
+      text-decoration: none;
+      color: #fff; }
+      .share div:nth-child(3) a i {
+        padding-right: 10px; }
+  .share div:nth-child(4) {
+    background: #941828;
+    margin-right: 2%; }
+    .share div:nth-child(4) a {
+      padding: 15px;
+      font-size: 12px;
+      text-decoration: none;
+      color: #fff; }
+      .share div:nth-child(4) a i {
+        padding-right: 10px; }
+  .share div:hover {
+    transform: translate(0, -0.5em);
+    transition: all 0.5s ease 0s; }
+
+.main-gioithieu, .main-loichaomung, .tochuc, .nghiencuukhoahoc, .detai {
+  font-size: 16px;
+  margin-top: 3%;
   background-color: #fff; }
+  .main-gioithieu h3, .main-loichaomung h3, .tochuc h3, .nghiencuukhoahoc h3, .detai h3 {
+    font-weight: bold;
+    padding-top: 30px; }
+  .main-gioithieu span, .main-loichaomung span, .tochuc span, .nghiencuukhoahoc span, .detai span {
+    font-weight: bold; }
+
+.tintuc {
+  background-color: #fff;
+  margin-top: 3%; }
+  .tintuc h3 {
+    margin-top: 5%;
+    color: #1e73be;
+    font-weight: bold; }
+  .tintuc .tin {
+    margin-top: 5%; }
+    .tintuc .tin a {
+      text-decoration: none; }
+      .tintuc .tin a h4 {
+        font-style: 22px;
+        color: #1e73be; }
+    .tintuc .tin p {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      padding-top: 25px; }
+    .tintuc .tin .tint {
+      margin-bottom: 10%; }
+
+
+.chitiet {
+  background-color: #fff;
+  margin-top: 3%; }
+  .chitiet h3 {
+    margin-top: 5%;
+    color: #1e73be;
+    font-weight: bold; }

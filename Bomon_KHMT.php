@@ -4,8 +4,8 @@ include('header.php');
 <main>
     <div class="container">
         <div class="row">
-            <div class="col-md-9 tochuc"><br><br>
-                <h3>Giới thiệu bộ môn Khoa học máy tính</h3><br>
+            <div class="col-md-9 tochuc">
+                <h3>Giới thiệu bộ môn Khoa học máy tính</h3>
                 <p></p>
                 <p>BM Khoa học máy tính gồm 9 giảng viên, giảng dạy các môn học đại cương, cơ sở chuyên ngành và chuyên ngành khoa học máy tính</p>
                 <p><span>Giới thiệu Bộ môn Khoa học máy tính</span></p>
