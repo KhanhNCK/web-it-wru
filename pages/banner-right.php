@@ -13,7 +13,7 @@
    <section id="diemdanh">
             <button>
               <a href="#">
-                <span class="text">ĐIỂM DANH SV</span>
+                <span onclick="openNav()" class="text">ĐIỂM DANH SV</span>
                 <span class="plus">
                   <span class="plus-sign">+</span>
                 </span></a>
